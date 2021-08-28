@@ -32,7 +32,7 @@ function createXPBot() {
         }
     })
     bot.on('error', (err) => console.log(err))
-    bot.on('end', () => setTimeout(createBot, 5000))
+    bot.on('end', () => setTimeout(createXPBot, 5000))
 }
 
 function createAFKBot() {
@@ -64,7 +64,7 @@ function createAFKBot() {
         }
     })
     bot.on('error', (err) => console.log(err))
-    bot.on('end', () => setTimeout(createBot, 5000))
+    bot.on('end', () => setTimeout(createAFKBot, 5000))
 }
 
 createAFKBot()
