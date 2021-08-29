@@ -17,7 +17,7 @@ function createBot() {
         {
             const commands = process.argv.slice(5);
             commands.forEach(_command => {
-                const command = _command.replace("|", " ");
+                const command = _command.replace("-", " ");
                 bot.chat(command);
             })
         }
