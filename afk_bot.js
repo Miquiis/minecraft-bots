@@ -1,6 +1,6 @@
 const mineflayer = require('mineflayer')
 
-if (process.argv.length < 6) {
+if (process.argv.length < 5) {
     console.log('Usage : node block_entity.js <host> <port> <name> [initial_commands]')
     process.exit(1)
 }
